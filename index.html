@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Promises vs. Pace</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="main.js"></script>
+</head>
+<body>
+  <main>
+
+    <!-- ===== HOOK ===== -->
+    <header>
+      <p class="kicker">DSC 106 Final Project · Prototype</p>
+      <h1>Promises vs. Pace</h1>
+      <p class="subtitle">Are the world's biggest economies keeping their clean energy promises?</p>
+      <p class="authors">David Yu · Emiliano Franco · Justin James · Adam Hamadene</p>
+    </header>
+
+    <section id="hook">
+      <p class="lede">
+        Brazil and Italy produce almost exactly the same amount of economic output, about
+        <strong>$2.0 trillion</strong> in 2024. Yet <strong>87%</strong> of Brazil's electricity
+        comes from renewables, compared with <strong>50%</strong> of Italy's.
+        So how much does a country's wealth really tell us about how clean its energy is,
+        and are the countries promising the most actually moving the fastest?
+      </p>
+    </section>
+
+    <!-- ===== SECTION 1: WORLD MAP (placeholder) ===== -->
+    <section id="map-section" class="placeholder">
+      <h2>1. The world's energy mix</h2>
+      <p>
+        <em>Coming soon:</em> a world map colored by each country's energy mix, with a year slider.
+        Clicking a country will add it to the timeline below.
+      </p>
+    </section>
+
+    <!-- ===== SECTION 2: TIMELINE (working) ===== -->
+    <section id="timeline-section">
+      <h2>2. How fast is each country's electricity getting cleaner?</h2>
+      <p>
+        Every one of the ten largest economies has raised its renewables share since 2015, but at
+        very different speeds. Add or remove countries and switch the measure to compare them.
+        Hover over the chart to read exact values.
+      </p>
+
+      <div class="controls">
+        <label>
+          Measure
+          <select id="metric-select">
+            <option value="renewables_share_elec">Renewables share of electricity</option>
+            <option value="low_carbon_share_elec">Low-carbon (renewables + nuclear) share</option>
+            <option value="fossil_share_elec">Fossil fuel share of electricity</option>
+            <option value="coal_share_elec">Coal share of electricity</option>
+          </select>
+        </label>
+        <label>
+          Add a country
+          <select id="country-select"></select>
+        </label>
+        <button id="reset-btn" type="button">Reset to 10 largest economies</button>
+      </div>
+
+      <div id="chips" aria-label="Selected countries (click to remove)"></div>
+      <div id="chart"></div>
+      <p class="source">Source: Our World in Data energy dataset (owid/energy-data), 2000–2024.</p>
+    </section>
+
+    <!-- ===== SECTION 3: PROMISE VS PACE (placeholder) ===== -->
+    <section id="promise-section" class="placeholder">
+      <h2>3. Promise vs. pace</h2>
+      <p>
+        <em>Coming soon:</em> each country's official 2030 target next to its current trend line,
+        with policy decisions from the Climate Policy Database marked on the timeline and GDP
+        from the World Bank overlaid.
+      </p>
+    </section>
+
+    <!-- ===== TAKEAWAY (placeholder) ===== -->
+    <section id="takeaway" class="placeholder">
+      <h2>Takeaway</h2>
+      <p><em>Coming soon.</em></p>
+    </section>
+
+    <!-- ===== PROTOTYPE WRITEUP ===== -->
+    <section id="writeup">
+      <h2>Prototype writeup</h2>
+
+      
+    </section>
+
+  </main>
+  <div id="tooltip" class="tooltip" hidden></div>
+</body>
+</html>
